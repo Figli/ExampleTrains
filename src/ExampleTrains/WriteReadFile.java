@@ -15,10 +15,10 @@ public class WriteReadFile {
             JAXBContext jaxbContext = JAXBContext.newInstance(Trains.class);
             Marshaller marshaller = jaxbContext.createMarshaller();
 
-            // читабельное форматирование
+            // С‡РёС‚Р°Р±РµР»СЊРЅРѕРµ С„РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-            // пишем в файл
+            // РїРёС€РµРј РІ С„Р°Р№Р»
             marshaller.marshal(trains, file);
             marshaller.marshal(trains, System.out);
 
