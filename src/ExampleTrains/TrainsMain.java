@@ -15,22 +15,22 @@ public class TrainsMain {
         trains.addTrain(new Train(2, "Kyev", "Lviv", LocalDateTime.of(2015, 7, 6, 19, 05)));
         trains.addTrain(new Train(3, "Lviv", "Donetsk", LocalDateTime.of(2015, 7, 6, 17, 00)));
 
-        // пишем поезда в файл
+        // РїРёС€РµРј РїРѕРµР·РґР° РІ С„Р°Р№Р»
         WriteReadFile.writeToFile(file, trains);
 
         System.out.println("1----------------------");
 
-        // читаем из файла и выводим в консоль
+        // С‡РёС‚Р°РµРј РёР· С„Р°Р№Р»Р° Рё РІС‹РІРѕРґРёРј РІ РєРѕРЅСЃРѕР»СЊ
         trains = WriteReadFile.readFromFile(file);
 
         System.out.println("2----------------------");
 
-        // добавляем поезд
+        // РґРѕР±Р°РІР»СЏРµРј РїРѕРµР·Рґ
         WriteReadFile.addTrainToFile(file, (new Train(4, "Lviv", "Poltava", LocalDateTime.of(2015, 7, 6, 20, 10))));
 
         System.out.println("3----------------------");
 
-        // задаем параметры поиска
+        // Р·Р°РґР°РµРј РїР°СЂР°РјРµС‚СЂС‹ РїРѕРёСЃРєР°
         LocalTime timeToSearchStart, timeToSearchFin;
         timeToSearchStart = LocalTime.of(03, 15);
         timeToSearchFin = LocalTime.of(19, 01);
